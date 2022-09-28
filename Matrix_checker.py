@@ -40,6 +40,8 @@ def Symmetrical():
 def AntiSymmetrical():
     for i in range(size):
         for j in range(size):
+            if i == j:
+                continue
             if matrix[i][j] == matrix[j][i]:
                 return False
     return True
